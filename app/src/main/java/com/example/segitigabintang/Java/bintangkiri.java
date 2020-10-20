@@ -7,12 +7,12 @@ import android.icu.text.UFormat;
  */
 public class bintangkiri {
     public static void main(String[] args){
-        int baris, spasi, bintang, jumlah;
+        int line, star , space, amount;
 
-        jumlah=7;
+        amount=7;
 
-        for (baris=0; baris<jumlah; baris++){
-            for(bintang=0; bintang<=baris; bintang++){
+        for (line=0; line<amount; line++){
+            for(star=0; star<=line; star++){
                 System.out.print("*");
             }
             System.out.print("\n");
@@ -21,11 +21,11 @@ public class bintangkiri {
 
         //proses perulangan segitiga bintang rata kanan
         System.out.print("\n");
-        for (baris=1; baris<=jumlah; baris++){
-            for (spasi=(jumlah-1); spasi>=baris; spasi--){
+        for (line=1; line<=amount; line++){
+            for (space=(amount-1); space>=line; space--){
                 System.out.print(" ");
             }
-            for (bintang=1; bintang<=baris; bintang++){
+            for (star=1; star<=line; star++){
                 System.out.print("*");
             }
             System.out.print("\n");
@@ -33,11 +33,11 @@ public class bintangkiri {
 
 
         System.out.print("\n");
-        for (baris=1; baris<=jumlah; baris++){
-            for (spasi=(jumlah-1); spasi>=baris; spasi--){
+        for (line=1; line<=amount; line++){
+            for (space=(amount-1); space>=line; space--){
                 System.out.print(" ");
             }
-            for (bintang=1; bintang<=2*baris-1; bintang++){
+            for (star=1; star<=2*line-1; star++){
                 System.out.print("*");
             }
             System.out.print("\n");
